@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prueba eventos</title>
+    <script text="text/javascript">
+function myFunction(event){
+console.log(event.type);
+console.log(event.currentTarget);
+console.log(event.clientX, event.clientY);
+let number = Math.random();
+this.innerText = new String(number);
+}
+    </script>
+</head>
+<body>
+    <p onclick="myFunction(this)">Esto es un párrafo</p>
+    <img src="loquesea" alt="Descripción alternativa" onclick="alert('Molo un monton')">
+</body>
+</html>
