@@ -1,5 +1,5 @@
 {
-  "name": "proyecto_ae3",
+  "name": "module-loadibg",
   "version": "0.0.1",
   "description": "Actividad Evaluable 3",
   "main": "index.js",
@@ -11,5 +11,8 @@
     "url": "https://github.com/2jd72jd9dfn48f/DWEC/tree/acteva1"
   },
   "author": "Esteban Herrera Escofet",
-  "license": "ISC"
+  "license": "MIT",
+  "dependencies": {
+    "lodash.merge": "^4.6.2"
+  }
 }
