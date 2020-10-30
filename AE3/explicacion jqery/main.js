@@ -12,10 +12,12 @@ const merged = lodash.merge(person1,ageData)
 paragraph.textContent = JSON.stringify(merged);
 });
 
+//npm init
+//npm install -g browserify
+//npm i -g
 //npm search lodash
 //npm install lodash.merge
-
-//browserify src/main.js -o src/bundle.js
+//browserify main.js -o bundle.js
 /* const result = math.sum(1,2);
 console.log(result); */
 //Get-ExecutionPolicy
