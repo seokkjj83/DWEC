@@ -18,9 +18,28 @@ document.addEventListener('DOMContentLoaded', () => {
     section.insertBefore(label, section.firstChild);
     section.insertBefore(check, section.firstChild);
 
+<<<<<<< HEAD
 
 
     function changecolor() {
+=======
+    [...links].forEach(link => link.addEventListener('mouseout', function (e) {
+        link.style.textDecoration = "none", link.style.color = "black";
+    }));
+
+    [...links].forEach(link => link.addEventListener('mouseover', function (e) {
+        link.style.textDecoration = "";
+        link.style.color = "blue";
+    }));
+
+    const images = document.getElementsByTagName('img');
+    const imagesArray = [...images];
+    if (imagesArray.length > 0) {
+        const z = imagesArray[0];
+        const x = z.insertAdjacentElement('beforebegin', document.createElement('input'));
+        x.setAttribute('type', 'checkbox');
+    };
+>>>>>>> fc7ad7a5972dd04274fd4f72b3a629b13a6ac7f4
 
         const button1 = document.getElementById('button1');
         if (button1.style.backgroundColor === 'blue') {
