@@ -1,3 +1,39 @@
+body {
+    height: 100vh;
+}
+
+.contenedor {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja {
+    width: 500px;
+    display: flex;
+    vertical-align: middle;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#boton {
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 640px) {
     * {
         background-color: grey;
