@@ -55,7 +55,6 @@
     .caja {
         width: 500px;
         display: flex;
-        /*         vertical-align: middle; */
         flex-direction: column;
         align-content: center;
         justify-content: center;
@@ -92,10 +91,10 @@
         align-items: center;
     }
     .contenedor .caja:last-child {
-        height: 50%;
+        height: 25%;
     }
     .contenedor .caja:first-child {
-        height: 25%;
+        height: 50%;
     }
     .contenedor .caja:nth-child(2) {
         height: 25%;
