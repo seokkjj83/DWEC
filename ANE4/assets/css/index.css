@@ -1,24 +1,21 @@
 body {
     height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .contenedor {
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    vertical-align: middle;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
 }
 
 .caja {
     width: 500px;
     display: flex;
-    vertical-align: middle;
     flex-direction: column;
     align-content: center;
-    justify-content: center;
     align-items: center;
 }
 
