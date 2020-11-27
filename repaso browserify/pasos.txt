@@ -1,0 +1,8 @@
+1.Inicializamos el proyecto(npm init)
+2.Ficheros index.html + main.js
+3. Instalamos libreria 'lodash.merge'
+4. Importamos libreria "require('...'),->const merge=require"
+5. Instalamos Browserify (/RequireJS)
+6. Mostramos en el DOM una mezcla de dos objetos en fromato JSON
+7.Lo persisitimos en el navegador
+8.Empaquetamos la aplicacion para su despliegue
