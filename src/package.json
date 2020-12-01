@@ -1,0 +1,19 @@
+{
+  "name": "ae4",
+  "version": "0.0.1",
+  "description": "AE4 ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2jd72jd9dfn48f/DWEC/tree/AE4"
+  },
+  "author": "Esteban Herrera Escofet",
+  "license": "MIT",
+  "dependencies": {
+    "chart": "^0.1.2",
+    "lodash.merge": "^4.6.2"
+  }
+}
