@@ -1,35 +1,54 @@
-const lodash = require('lodash.merge');
-
 document.addEventListener(('DOMContentLoaded'), () => {
-    /* const paragraph = document.createElement('p');
-    document.body.appendChild(paragraph);
 
-    const merged = lodash.merge(person1, age1);
-    paragraph.textContent = JSON.stringify(merged); */
-    const miLienzo = document.getElementById('miGrafica');  
-    const contexto = miLienzo.getContext('2d');
-    const configuracion = {
-        type: 'line',
-        //         type: 'bar',(barras)
-        data: {
-            label: ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],
-            datasets: [{
-                label: 'LLuvias',
-                data:[43600,23400,56780],
-            }
-            ]
-        }
-    };
-    const configuracion2 = {
+
+    const miLienzo = document.getElementById('miGrafica').getContext('2d');
+    const configuracion = new Chart(miLienzo, {
         type: 'bar',
         data: {
-            label: ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],
             datasets: [{
-                label: 'Ventas',
-                data:[43600,23400,56780],
+
+                    label: 'Temperaturas',
+                    borderColor: 'rgb(153, 102, 255)',
+                    data: [],
+                    type: 'line',
+                    order: 2
+                }, {
+                    label: 'Lluvias',
+                    backgroundColor: 'rgb(180, 122, 132)',
+                    data: [],
+                    order: 1
+                },
+
+            ],
+            labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
             }
-            ]
         }
-    };
-    const grafica = new Chart(contexto, configuracion);   
-}); 
+    });
+
+
+    const boton = document.getElementById('boton');
+    boton.addEventListener('click', () => {
+        let value = document.getElementById('month').value.split(',');
+        let value1 = document.getElementById('temp').value.split(',');
+        let value2 = document.getElementById('rain').value.split(',');
+        for (let i = 0; i < value.length; i++) {
+            configuracion.data.datasets[0].data[value[i] - 1] = value1[i];
+            configuracion.data.datasets[1].data[value[i] - 1] = value2[i];
+        }
+        if (value.length == value1.length && value1.length == value2.length) {
+            configuracion.update();
+        } else {
+
+            alert('Introduce los meses para continuar');
+
+        }
+    })
+});

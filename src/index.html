@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src='assets/js/main.js' type='text/javascript'></script>
+
     <title>AE4</title>
 </head>
+
 <body>
-    
+    <div>
+        <h1>Gráfica del tiempo</h1>
+        <div id='grafica'>
+            <canvas id="miGrafica" width="400" height="400"></canvas>
+        </div>
+
+        <form action="">
+            <label for="temperaturas">Temperaturas: </label>
+            <input type="text" name="temp" id="temp" pattern="^\d+(,\d+)*$" required>
+            <label for="lluvias">Lluvias: </label>
+            <input type="text" name="rain" id="rain" pattern="^\d+(,\d+)*$" required>
+            <label for="meses">Meses: </label>
+            <input type="text" name="month" id="month" pattern="^\d+(,\d+)*$" required>
+            <input type="button" id="boton" value="Actualizar">
+        </form>
+    </div>
 </body>
+
 </html>
