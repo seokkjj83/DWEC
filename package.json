@@ -1,0 +1,23 @@
+{
+  "name": "axios",
+  "version": "0.0.1",
+  "description": "",
+  "main": "promise.js",
+  "dependencies": {
+    "axios": "^0.21.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/76dfe45fdhr4tn87/DWEC.git"
+  },
+  "author": "Esteban Herrera Escofet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/76dfe45fdhr4tn87/DWEC/issues"
+  },
+  "homepage": "https://github.com/76dfe45fdhr4tn87/DWEC#readme"
+}
