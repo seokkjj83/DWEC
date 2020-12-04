@@ -1,0 +1,25 @@
+{
+    "name": "ane5",
+    "version": "0.0.1",
+    "description": "",
+    "main": "/src/assets/js/main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "browserify main.js -o bundle.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/76dfe45fdhr4tn87/DWEC.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/76dfe45fdhr4tn87/DWEC/issues"
+    },
+    "homepage": "https://github.com/76dfe45fdhr4tn87/DWEC#readme",
+    "dependencies": {
+        "axios": "^0.21.0",
+        "browserify": "^17.0.0",
+        "watchify": "^3.11.1"
+    }
+}
